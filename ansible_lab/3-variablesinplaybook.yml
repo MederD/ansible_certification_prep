@@ -1,4 +1,4 @@
-- hosts: private
+- hosts: web
   become: yes
   vars: #inline variables
     webserver: httpd
