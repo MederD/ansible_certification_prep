@@ -1,5 +1,5 @@
 
-- hosts: qa
+- hosts: web
   become: yes
   tasks:
   - name: Install apache packages
@@ -17,5 +17,5 @@
       state: directory
   - name: static website is deployed
     uri:
-      url: https://raw.githubusercontent.com/sprintqaDevOps/ansible/main/playbooks/index.html
+      url: https://raw.githubusercontent.com/MederD/ansible_certification_prep/main/ansible_lab/index.html
       dest: /var/www/html
