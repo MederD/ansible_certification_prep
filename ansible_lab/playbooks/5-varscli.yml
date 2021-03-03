@@ -1,5 +1,6 @@
 ---
 # will declare variables from cli
+# ansible-playbook playbookname.yml --extra-vars webserver=httpd
 - hosts: web
   become: yes
   vars: 
