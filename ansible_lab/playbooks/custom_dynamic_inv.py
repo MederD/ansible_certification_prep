@@ -10,7 +10,7 @@ except Exception as e:
    print(e)
    sys.exit(2)
 def get_hosts(all_ec2s,f_value):
-   custom_filter={"Name":"Environment", "Values":[f_value]}
+   custom_filter={"Name":"tag:Environment", "Values":[f_value]}
    hosts=[]
    for instance in all_ec2s.instances.filter(Filters=[custom_filter]):
     hosts.append(instance.private_ip_address)
