@@ -10,5 +10,5 @@
       image: ami-0915bcb5fa77e4892
       key_name: amazon_pub
       region: us-east-1
-      tags:
-        Environment: test
+      instance_tags:
+        Environment: testgit stat
