@@ -14,4 +14,4 @@
        instance_ids: "{{item.instance_id}}"
        state: stopped
      with_items: "{{ec2_info.instances}}"
-     when: item.tags.keys() | dict_item.value == "web"
+     when: item.tags.keys() | length == 0
