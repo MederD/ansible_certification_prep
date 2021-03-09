@@ -8,7 +8,7 @@
       ec2_instance_facts:
        region: us-east-1
        filters:
-       "tag:Environment": web
+       "tag:Environment": test*
       register: ec2_info
     #  tags:
     #    - always
