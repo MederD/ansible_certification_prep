@@ -15,7 +15,7 @@
       - never
    - name: stopping  ec2 instance
      ec2:
-      instance_ids: "{ AmiID }"
+      instance_ids: "{{ AmiID }}"
       region: us-east-1
       state: stopped
       wait: yes
@@ -24,7 +24,7 @@
       - never
    - name: terminating ec2 instance
      ec2:
-      instance_ids: "{ AmiID }"
+      instance_ids: "{{ AmiID }}"
       region: us-east-1
       state: absent
       wait: yes
