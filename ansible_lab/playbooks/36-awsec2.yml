@@ -7,8 +7,8 @@
    - name: Launching ec2 instance with ec2 module 
      ec2:
       instance_type: t2.micro
-      image: ami-0915bcb5fa77e4892
-      key_name: amazon_pub
+      image: "{{ ami-ID }}"
+      key_name: "{{ keyname }}"
       region: us-east-1
       instance_tags:
         Environment: testgit stat
